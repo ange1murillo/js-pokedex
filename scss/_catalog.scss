@@ -78,9 +78,9 @@ h1 {
 	opacity: 0.98;
 	display: flex;
 	justify-content: center;
-    align-items: center;
-    // position: relative;
-    z-index: 999;
+	align-items: center;
+	// position: relative;
+	z-index: 999;
 
 	.popup-content {
 		width: 100%;
@@ -93,8 +93,8 @@ h1 {
 		.popup-title {
 			font-size: 2rem;
 			text-transform: capitalize;
-            margin: 0;
-            padding-bottom: 15px;
+			margin: 0;
+			padding-bottom: 15px;
 		}
 
 		p {
@@ -141,23 +141,45 @@ button:hover {
 	width: 50%;
 	display: flex;
 	justify-content: space-evenly;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 3px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 3px;
 }
 
 .genTitle {
 	text-align: center;
-    font-size: 2rem;
-    padding-bottom: 20px;
+	font-size: 2rem;
+	padding-bottom: 20px;
 }
 
-.dex-title{
-    padding-bottom: 20px;
+.dex-title {
+	padding-bottom: 20px;
 }
 
+// @media screen and (max-width: 768px) {
+// 	html,
+// 	body {
+// 		overflow-x: hidden;
+// 	}
 
-@media screen and (max-width: 768px) {
+// 	.checkbox-contain {
+// 		background: white;
+// 		width: 100%;
+// 		display: flex;
+// 		justify-content: space-evenly;
+// 		margin: 0 auto;
+// 		margin-bottom: 20px;
+// 		padding: 3px;
+// 		font-size: 12px;
+// 	}
+// }
+
+//iphone plus
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+	html,
+	body {
+		overflow-x: hidden;
+	}
 
 	.checkbox-contain {
 		background: white;
@@ -169,6 +191,98 @@ button:hover {
 		padding: 3px;
 		font-size: 12px;
 	}
-	
+
+	.popup {
+		.popup-content {
+			width: 100%;
+			text-align: center;
+
+			.popup-image {
+				width: 25%;
+			}
+
+			.popup-title {
+				font-size: 2rem;
+				text-transform: capitalize;
+				margin: 0;
+				padding-bottom: 15px;
+			}
+
+			p {
+				font-size: 1.5rem;
+			}
+		}
+	}
 }
 
+//iphone 6,7,8
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+	.checkbox-contain {
+		background: white;
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		padding: 3px;
+		font-size: 12px;
+	}
+
+	.popup {
+		.popup-content {
+			width: 100%;
+			text-align: center;
+
+			.popup-image {
+				width: 25%;
+			}
+
+			.popup-title {
+				font-size: 2rem;
+				text-transform: capitalize;
+				margin: 0;
+				padding-bottom: 15px;
+			}
+
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+///iphone x
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+	.checkbox-contain {
+		background: white;
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		padding: 3px;
+		font-size: 11px;
+	}
+
+	.popup {
+		.popup-content {
+			width: 100%;
+			text-align: center;
+
+			.popup-image {
+				width: 25%;
+			}
+
+			.popup-title {
+				font-size: 2rem;
+				text-transform: capitalize;
+				margin: 0;
+				padding-bottom: 15px;
+			}
+
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+}
